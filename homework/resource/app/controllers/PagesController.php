@@ -14,7 +14,10 @@ class PagesController
   }
 
   function dadosSalvar(){
-    
+    $titulo = $_POST['titulo'];
+    $descricao = $_POST['descricao'];
+    $materia = $_POST['materia'];
+    echo $materia . ' ' . $descricao . ' ' . $titulo;
   }
 }
 
