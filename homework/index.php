@@ -2,13 +2,11 @@
 
 require 'resource\app\controllers\PagesController.php';
 
-$controllerName =  (empty($_GET['controller'])  
-                ? 'pages' : $_GET['controller']) . 'Controller';
-
-$actionName = empty($_GET['action'])
-                ? 'home' : $_GET['controller'];
-
-$controller = new $controllerName();
-$controller->$actionName();
+$controllerName =  'pagesController';					// declara controlador de paginas
+	
+$actionName = 'home';						// declara o metodo a ser chamado
+									// pagina a entrar no browser
+$controller = new $controllerName();					// instancia um controlador
+$controller->$actionName();						// chama o metodo do controlador
 
  ?>
