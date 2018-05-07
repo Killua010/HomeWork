@@ -14,10 +14,22 @@ class PagesController
   }
 
   function dadosSalvar(){
+    require 'resource\app\models\Materia.php';
+    require 'resource\app\models\HomeWork.php';
+
     $titulo = $_POST['titulo'];
     $descricao = $_POST['descricao'];
     $materia = $_POST['materia'];
-    echo $materia . ' ' . $descricao . ' ' . $titulo;
+
+    $objMateria = new Materia($materia);
+    $objHomeWork = new HomeWork($objMateria, $titulo, $descricao);
+
+    if($objHomeWork->validarDados()){
+      echo "Dados Invalidos";
+    }
+    /*
+
+    echo $materia . ' ' . $descricao . ' ' . $titulo;*/
   }
 }
 

@@ -6,15 +6,15 @@
      */
     class HomeWork
     {
-      private $materia;
-      private $titulo;
-      private $descricao;
+      var $materia;
+      var $titulo;
+      var $descricao;
 
       function __construct($materia, $titulo, $descricao)
       {
-        $this->$materia = $materia;
-        $this->$titulo = $titulo;
-        $this->$descricao = $descricao;
+        $this->materia = $materia;
+        $this->titulo = $titulo;
+        $this->descricao = $descricao;
       }
 
       public function validarDados()
@@ -29,7 +29,7 @@
       {
         # code...
       }
-      
+
     }
 
  ?>
