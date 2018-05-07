@@ -4,13 +4,13 @@
         <title>HomeWork</title>
         <meta charset="UTF-8">
     </head>
-    <body>   
+    <body>
         <header>
             <h1>Meus HomeWorks</h1>
-        </header>   
+        </header>
         <article>
             <section>
-                <form method="post" action="#">
+                <form method="post" action="index.php/?controller=pages&action=dadosSalvar">
                     <fieldset>
                         <legend>Novo HomeWork</legend>
                         Titulo
@@ -29,9 +29,8 @@
                 </form>
             </section>
             <section>
-                
+
             </section>
         </article>
     </body>
 </html>
-
