@@ -1,6 +1,6 @@
 <?php
 
-require 'resource\app\controllers\PagesController.php';
+require 'resource/app/controllers/PagesController.php';
 
 $controllerName =  (empty($_GET['controller'])  
                 ? 'pages' : $_GET['controller']) . 'Controller';

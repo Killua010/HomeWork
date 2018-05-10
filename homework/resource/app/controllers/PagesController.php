@@ -10,12 +10,13 @@ class PagesController
 
   function home()
   {
-    include 'resource\app\views\Formulario.php';
+    include 'resource/app/views/Formulario.php';
   }
 
   function dadosSalvar(){
-    require 'resource\app\models\Materia.php';
-    require 'resource\app\models\HomeWork.php';
+
+    require 'resource/app/models/Materia.php';
+    require 'resource/app/models/HomeWork.php';
 
     $titulo = $_POST['titulo'];
     $descricao = $_POST['descricao'];
@@ -30,6 +31,7 @@ class PagesController
     /*
 
     echo $materia . ' ' . $descricao . ' ' . $titulo;*/
+
   }
 }
 
