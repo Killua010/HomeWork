@@ -19,10 +19,10 @@
 
       public function validarDados()
       {
-        if($this->$materia = '' || $this->$titulo = '' || $this->$descricao = ''){
-          return false;
+        if($this->materia == '' || $this->titulo == '' || $this->descricao == ''){
+          return true;
         }
-        return true;
+        return false;
       }
 
       public function salvar()

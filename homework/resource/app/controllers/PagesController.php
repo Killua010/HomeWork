@@ -27,10 +27,9 @@ class PagesController
 
     if($objHomeWork->validarDados()){
       echo "Dados Invalidos";
+    } else {
+      echo "Dados Salvos";
     }
-    /*
-
-    echo $materia . ' ' . $descricao . ' ' . $titulo;*/
 
   }
 }
